@@ -1,10 +1,10 @@
 name: Suggestion
 description: >-
-  Please use this template when you want to suggest a feature. Please do not ask for mod updates or ports, they will come when they are ready.
+  Please use this template when you want to suggest a feature.
 title: '[Suggestion]: '
 labels: ["enhancement"]
 assignees:
-  - Fuzss
+  - ConGodsted
 body:
   - type: textarea
     id: suggestion

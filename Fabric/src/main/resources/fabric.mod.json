@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "${modId}",
+  "version": "${modVersion}",
+
+  "name": "${modName}",
+  "description": "${modDescription}",
+  "authors": [
+    "${modAuthor}"
+  ],
+  "contact": {
+    "homepage": "${modPageUrl}",
+    "issues": "${modIssueUrl}",
+    "sources": "${modPageUrl}"
+  },
+
+  "license": "MPL-2",
+  "icon": "mod_logo.png",
+
+  "environment": "${modFabricEnvironment}",
+  "entrypoints": {
+    "main": [
+      "${modGroup}.impl.PuzzlesLibFabric"
+    ],
+    "client": [
+    ],
+    "cardinal-components": [
+      "${modGroup}.capability.FabricCapabilityController"
+    ]
+  },
+  "mixins": [
+    "${modId}.fabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${minFabricVersion}",
+    "fabric-api": ">=${minFabricApiVersion}",
+    "forgeconfigapiport": "*",
+    "minecraft": ">=${minMinecraftVersion} <${nextMinecraftVersion}",
+    "java": ">=17",
+    "cardinal-components-base": "*",
+    "cardinal-components-entity": "*",
+    "cardinal-components-block": "*",
+    "cardinal-components-chunk": "*",
+    "cardinal-components-world": "*"
+  },
+
+  "custom": {
+    "modmenu": {
+      "badges": [
+        "library"
+      ]
+    }
+  }
+}

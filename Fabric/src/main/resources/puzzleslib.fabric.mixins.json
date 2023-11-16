@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_17",
+  "package": "fuzs.puzzleslibforked.mixin",
+  "refmap": "puzzleslibforked.refmap.json",
+  "mixins": [
+    "accessor.SpawnPlacementsAccessor"
+  ],
+  "client": [
+    "client.ItemRendererMixin",
+    "client.ModelManagerMixin",
+    "client.accessor.AbstractContainerScreenAccessor",
+    "client.accessor.MinecraftAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
